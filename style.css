@@ -2,38 +2,49 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #333232;
     display: flex;
     flex-direction: column;
+    
 }
 
 header {
-    background-color: #333;
+    background-color: #660202;
     color: white;
     padding: 20px;
     text-align: center;
+    align-items: center;
+    
 }
-
+p {
+    text-align: center;
+    align-items: center;
+    color: white;
+    
+}
 main {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    color: white;
+    padding: 50px;
     flex: 1;
+    align-items: center;
+    text-align: center;
 }
 
 h2 {
-    color: #333;
+    color: white;
 }
 
 img {
     display: block;
-    margin: 20px auto;
+    margin: auto;
     max-width: 100%;
     height: auto;
 }
 
 footer {
-    background-color: #333;
+    background-color: #660202;
     color: white;
     padding: 10px;
     text-align: center;
