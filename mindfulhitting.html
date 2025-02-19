@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Hitting</title>
+    <link rel="stylesheet" href="styling.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: whitesmoke; /* Light background color */
+            color: #333; /* Dark text color */
+            display: flex; /* Use flexbox for layout */
+            flex-direction: column; /* Stack children vertically */
+            min-height: 100vh; /* Ensure body takes at least full viewport height */
+        }
+        header {
+            background-color: #8f0500; /* Header background */
+            color: white; /* White text */
+            padding: 20px; /* Padding */
+            text-align: center; /* Centered text */
+        }
+        main {
+            flex: 1; /* Allow the main content to grow and take available space */
+            display: flex; /* Use flexbox for card layout */
+            flex-direction: column; /* Stack cards vertically */
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap; /* Allow cards to wrap if necessary */
+        }
+        .card {
+            flex: 1; /* Allow cards to grow */
+            min-width: 250px; /* Minimum width for cards */
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center; /* Center text in cards */
+        }
+        .card img {
+            max-width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px; /* Rounded corners for images */
+        }
+        footer {
+            text-align: center; /* Centered text */
+            padding: 10px 0; /* Padding */
+            background-color: #333; /* Dark background */
+            color: white; /* White text */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mindful Hitting</h1>
+    <h4>Become your best coach, by bringing more awareness to your swing</h4>
+</header>
+
+<main>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Description of image 1"> <!-- Replace with your image -->
+            <h2>Card Title 1</h2>
+            <p>This is some content for the first card. It can include tips, techniques, or insights.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Description of image 2"> <!-- Replace with your image -->
+            <h2>Card Title 2</h2>
+            <p>This is some content for the second card. It can include tips, techniques, or insights.</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Description of image 3"> <!-- Replace with your image -->
+            <h2>Card Title 3</h2>
+            <p>This is some content for the third card. It can include tips, techniques, or insights.</p>
+        </div>    
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Description of image 4"> <!-- Replace with your image -->
+            <h2>Card Title 4</h2>
+            <p>This is some content for the fourth card. It can include tips, techniques, or insights.</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Mindful Hitting

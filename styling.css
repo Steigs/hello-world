@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color */
+}
+
+/* Header Styles */
+header {
+    background-color: #8f0500; /* Green background */
+    color: white; /* White text */
+    padding: 20px; /* Padding */
+    text-align: center; /* Centered text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Card Container Styles */
+.card-container {
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Allow wrapping to create rows */
+    gap: 20px; /* Gap between cards */
+    padding: 10px; /* Padding around the container */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Card Styles */
+.card {
+    flex: 0 0 calc(50% - 20px); /* Each card takes up 50% of the container width minus the gap */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 20px; /* Padding inside cards */
+    background: white; /* White background for cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    text-align: center; /* Center text in cards */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+/* Optional: Add a hover effect */
+.card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+
+/* Image Styles */
+.card img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Footer Styles */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Stack cards vertically on small screens */
+    }
+}
+
+footer {
+    text-align: center; /* Centered text */
+    padding: 10px 0; /* Padding */
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    position: relative; /* Positioning */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Shadow on top */
+}
