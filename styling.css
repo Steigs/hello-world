@@ -3,8 +3,18 @@ body {
     font-family: 'Arial', sans-serif; /* Font family */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
-    background-color: #f4f4f4; /* Light background color */
+    background-color: gray; /* Light background color */
     color: #333; /* Dark text color */
+    text-align: center;
+
+}
+
+p {
+    margin: 100px;
+    padding: 0;
+    background-color: gray;
+    color: white;
+
 }
 
 /* Header Styles */
