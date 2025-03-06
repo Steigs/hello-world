@@ -1,0 +1,77 @@
+#project on page 41-42
+
+dinner=["levy","meg","jackie","garrett","janine","eric","mom","dad"]
+print("Dinner Guest List:")
+print(dinner)
+print(f"\n{dinner[0].title()}, I hope you can join Natalie and I for dinner next Saturday at 6pm!")
+print(f"\n{dinner[1].title()}, I hope you can join Natalie and I for dinner next Saturday at 6pm!")
+print(f"\n{dinner[2].title()}, I hope you can join Natalie and I for dinner next Saturday at 6pm!")
+print(f"\n{dinner[3].title()}, I hope you can join Natalie and I for dinner next Saturday at 6pm!")
+print(f"\n{dinner[4].title()}, I hope you can join Natalie and I for dinner next Saturday at 6pm!")
+print(f"\n{dinner[5].title()}, I hope you can join Natalie and I for dinner next Saturday at 6pm!")
+print(f"\n{dinner[-2].title()}, I hope you can join Natalie and I for dinner next Saturday at 6pm!")
+print(f"\n{dinner[-1].title()}, I hope you can join Natalie and I for dinner next Saturday at 6pm!")
+
+unable= dinner.pop(3)
+
+
+print(f"\n{unable.title()}, We are sorry to hear that you cannot make it for dinner.")
+dinner.insert(3,"preston")
+print()
+print("Updated Dinner Guest List:")
+print(dinner)
+print(f"\n{dinner[0].title()}, I hope you can still join Natalie and I for dinner next Saturday at 6pm!")
+print(f"\n{dinner[1].title()}, I hope you can still join Natalie and I for dinner next Saturday at 6pm!")
+print(f"\n{dinner[2].title()}, I hope you can still join Natalie and I for dinner next Saturday at 6pm!")
+print(f"\n{dinner[3].title()}, I hope you can join Natalie and I for dinner next Saturday at 6pm!")
+print(f"\n{dinner[4].title()}, I hope you can still join Natalie and I for dinner next Saturday at 6pm!")
+print(f"\n{dinner[5].title()}, I hope you can still join Natalie and I for dinner next Saturday at 6pm!")
+print(f"\n{dinner[-2].title()}, I hope you can still join Natalie and I for dinner next Saturday at 6pm!")
+print(f"\n{dinner[-1].title()}, I hope you can still join Natalie and I for dinner next Saturday at 6pm!")
+
+dinner.insert(0,"ellie")
+dinner.insert(4,"grayson")
+dinner.append("miles")
+print(dinner)
+print(f"\nHey, {dinner[0].title()}, we hope you can join our dinner party on Saturday!")
+print(f"\nHey, {dinner[1].title()}, we found a larger table so we get to include a few more guests, Ellie, Grayson and Miles. Look forwaard to seeing you all on Saturday!")
+print(f"\nHey, {dinner[2].title()}, we found a larger table so we get to include a few more guests, Ellie, Grayson and Miles. Look forwaard to seeing you all on Saturday!")
+print(f"\nHey, {dinner[3].title()}, we found a larger table so we get to include a few more guests, Ellie, Grayson and Miles. Look forwaard to seeing you all on Saturday!")
+print(f"\nHey, {dinner[4].title()}, we hope you can join our dinner party on Saturday!")
+print(f"\nHey, {dinner[5].title()}, we found a larger table so we get to include a few more guests, Ellie, Grayson and Miles. Look forwaard to seeing you all on Saturday!")
+print(f"\nHey, {dinner[6].title()}, we found a larger table so we get to include a few more guests, Ellie, Grayson and Miles. Look forwaard to seeing you all on Saturday!")
+print(f"\nHey, {dinner[7].title()}, we found a larger table so we get to include a few more guests, Ellie, Grayson and Miles. Look forwaard to seeing you all on Saturday!")
+print(f"\nHey, {dinner[8].title()}, we found a larger table so we get to include a few more guests, Ellie, Grayson and Miles. Look forwaard to seeing you all on Saturday!")
+print(f"\nHey, {dinner[9].title()}, we found a larger table so we get to include a few more guests, Ellie, Grayson and Miles. Look forwaard to seeing you all on Saturday!")
+print(f"\nHey, {dinner[-1].title()}, we hope you can join our dinner party on Saturday!")
+
+
+print("Everyone we have terrible news, the table won't be here in  time and we already got rid of our other table in advance so we can no longer host the party. We are so bummed about it. We hope to reschedule soon.")
+
+print(dinner)
+bum=dinner.pop(0)
+print(f"\n{bum.title()}, we wanted to recah out to you personally to tell you how sorry we are we coudn't have you over this weekend.")
+bum=dinner.pop(1)
+print(f"\n{bum.title()}, we wanted to recah out to you personally to tell you how sorry we are we coudn't have you over this weekend.")
+bum=dinner.pop(1)
+print(f"\n{bum.title()}, we wanted to recah out to you personally to tell you how sorry we are we coudn't have you over this weekend.")
+bum=dinner.pop(1)
+print(f"\n{bum.title()}, we wanted to recah out to you personally to tell you how sorry we are we coudn't have you over this weekend.")
+bum=dinner.pop(2)
+print(f"\n{bum.title()}, we wanted to recah out to you personally to tell you how sorry we are we coudn't have you over this weekend.")
+bum=dinner.pop(2)
+print(f"\n{bum.title()}, we wanted to recah out to you personally to tell you how sorry we are we coudn't have you over this weekend.")
+bum=dinner.pop(2)
+print(f"\n{bum.title()}, we wanted to recah out to you personally to tell you how sorry we are we coudn't have you over this weekend.")
+bum=dinner.pop(2)
+print(f"\n{bum.title()}, we wanted to recah out to you personally to tell you how sorry we are we coudn't have you over this weekend.")
+bum=dinner.pop(2)
+print(f"\n{bum.title()}, we wanted to recah out to you personally to tell you how sorry we are we coudn't have you over this weekend.")
+
+print(dinner)
+del dinner[0]
+del dinner[0]
+
+print("and...")
+print(dinner)
+print("the End")
