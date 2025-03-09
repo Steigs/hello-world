@@ -17,7 +17,7 @@ def now_show (show_messages):
 unread_messages = ["Yo", "Sup", "LOL"]
 show_messages = []
 
-messages(unread_messages, show_messages)
+messages(unread_messages[:], show_messages)
 now_show(show_messages)
 
 print(unread_messages)
