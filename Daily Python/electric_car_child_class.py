@@ -1,4 +1,4 @@
-# page 162
+# Inheritance to child classes page 167
 
 class Car:
     '''A simple attempt to represent a car'''
@@ -30,8 +30,19 @@ class Car:
         '''Add the given amount to the odometer reading'''
         self.odometer_reading += miles
 
-my_new_car = Car ("audi", "A4" , "2024")
-print(my_new_car.get_descriptive_name())
+class ElectricCar(Car):
+    '''Represents aspects of a car, specific to electric vehicles'''
 
-my_new_car.update_odometer (500)
-my_new_car.read_odometer()
+    def __init__(self, make, model, year):
+        '''Initialize attributes of the parent class
+        Then initialize attributes specific to an electric car'''
+        super().__init__(make, model, year)
+        self.battery_size= 40
+
+    def describe_battery(self):
+        '''Print a statement describing the battery size'''
+        print(f"This car has a {self.battery_size} -- KWH battery.")
+
+my_leaf = ElectricCar ('nissan','leaf', 2024)
+print(my_leaf.get_descriptive_name())
+my_leaf.describe_battery()
