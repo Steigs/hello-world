@@ -7,10 +7,10 @@ class Girlfriend:
         self.height = height
         self.hair = hair
         self.personality= personality
-        self.sexy = 11
+        self.sexy = 12
 
     def full_description (self):
-        total_description = f"{self.name.title()} is {self.age}, is {self.personality} with {self.hair} who is {self.age} tall."
+        total_description = f"{self.name.title()} is {self.age}, is {self.personality} with {self.hair} hair, who is {self.age} and {self.height} feet tall."
         return total_description
     
     def sexiness (self):
