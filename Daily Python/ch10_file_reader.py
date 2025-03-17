@@ -66,3 +66,27 @@ if birthday in pi_string:
     print("Your birthday appears in the first million digits of pi!")
 else:
     print("Your birthday does not appear.")
+
+
+# project 10-1 on page 189
+
+from pathlib import Path
+
+path = Path("learning_python.txt")
+contents = path.read_text()
+print(contents)
+
+
+path= Path("learning_python.txt")
+contents = path.read_text()
+
+lines=contents.splitlines()
+for line in lines:
+    print(line)
+
+
+path= Path("learning_python.txt")
+contents = path.read_text()
+
+for line in contents.splitlines():
+    print(line)
