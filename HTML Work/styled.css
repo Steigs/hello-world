@@ -65,3 +65,15 @@ div {
     margin: 5px 0; /* Add margin above and below the paragraph */
     padding: 10px;
 }
+
+.books {
+    padding-top: 50px;
+}
+
+
+.book {
+
+    text-align: left;
+    background-color: rgb(77, 72, 72);
+    width: 100%;
+}
