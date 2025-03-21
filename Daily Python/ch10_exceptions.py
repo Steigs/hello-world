@@ -12,4 +12,4 @@ else:
     # Count the approximate number of words in the file:
     words =contents.split()
     num_words=len(words)
-    print(f"The file {path} has abotu {num_words} words.")
+    print(f"The file {path} has about {num_words} words.")
