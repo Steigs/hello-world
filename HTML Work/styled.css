@@ -68,12 +68,19 @@ div {
 
 .books {
     padding-top: 50px;
+    background-color: rgb(77, 72, 72);
+    padding: 20px; /* Add padding for the full-width background */
+    width: 100%;
 }
 
 
 .book {
-
-    text-align: left;
     background-color: rgb(77, 72, 72);
+    padding: 20px; /* Add padding for the full-width background */
     width: 100%;
+    text-align: left;
+   
+    
 }
+
+
