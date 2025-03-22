@@ -66,21 +66,19 @@ div {
     padding: 10px;
 }
 
-.books {
-    padding-top: 50px;
+
+section {
     background-color: rgb(77, 72, 72);
-    padding: 20px; /* Add padding for the full-width background */
-    width: 100%;
+    width: 100%; /* Full width for the background */
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-
-.book {
-    background-color: rgb(77, 72, 72);
-    padding: 20px; /* Add padding for the full-width background */
-    width: 100%;
-    text-align: left;
-   
-    
+.content-wrapper {
+    max-width: 1000px; /* Set a maximum width for the text content */
+    margin: 0 auto; /* Center the content wrapper horizontally */
+    text-align: left; /* Keep text aligned to the left */
 }
+
 
 
