@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A brief description of your webpage">
+    <title>Your Page Title</title>
+    <!-- <link rel="stylesheet" href="styles.css"> Link to your CSS file -->
+    <!-- <script src="script.js" defer></script> Link to your JavaScript file -->
+    
+    <style>
+        header {
+            display: flex;               /* Use Flexbox for layout */
+            justify-content: space-between; /* Space between items */
+            align-items: center;        /* Center items vertically */
+            padding: 10px;             /* Add some padding */
+            background-color: black;    /* Set background color to black */
+            color: white;               /* Set text color to white */
+        }
+
+        h1 {
+            margin-left: 80px;         /* Move the title to the right by 80px */
+        }
+
+        .header-image {
+            margin: 0 20px;            /* Add some margin around the image */
+            max-height: 50px;          /* Set a max height for the image */
+        }
+
+        nav {
+            margin-right: 80px;        /* Move the navigation to the left by 80px */
+        }
+
+        nav ul {
+            list-style-type: none;      /* Remove bullet points */
+            padding: 0;                 /* Remove default padding */
+            margin: 0;                  /* Remove default margin */
+        }
+
+        nav ul li {
+            display: inline;            /* Display list items inline */
+            margin-right: 20px;        /* Add some space between items */
+        }
+
+        nav ul li a {
+            text-decoration: none;      /* Remove underline from links */
+            color: white;               /* Set link color to white */
+            background-color: transparent; /* Set initial background to transparent */
+            padding: 10px 15px;        /* Add padding to create button effect */
+            border: 2px solid white;    /* Add a white border */
+            border-radius: 25px;       /* Make the buttons rounded */
+            transition: background-color 0.3s; /* Smooth transition for background color */
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(136, 1, 1);      /* Change background color to red on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Brady Steiger</h1>
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fromsfun.com%2Fwp-content%2Fuploads%2F2023%2F03%2FMLB-SlugFest-Loaded.jpg&f=1&nofb=1&ipt=e660121f25f21f80965f07fee5064b8872da423d772d82e892e104bd7ae21043" alt="Description of Image" class="header-image">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
