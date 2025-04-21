@@ -4,56 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A brief description of your webpage">
-    <title>Your Page Title</title>
-    <!-- <link rel="stylesheet" href="styles.css"> Link to your CSS file -->
-    <!-- <script src="script.js" defer></script> Link to your JavaScript file -->
+    <title>Steigs</title>
     
     <style>
         header {
-            display: flex;               /* Use Flexbox for layout */
-            justify-content: space-between; /* Space between items */
-            align-items: center;        /* Center items vertically */
-            padding: 10px;             /* Add some padding */
-            background-color: black;    /* Set background color to black */
-            color: white;               /* Set text color to white */
+            display: flex;               
+            justify-content: space-between; 
+            align-items: center;        
+            padding: 10px;             
+            background-color: black;    
+            color: white;               
         }
 
         h1 {
-            margin-left: 80px;         /* Move the title to the right by 80px */
+            margin-left: 80px;         
         }
 
         .header-image {
-            margin: 0 20px;            /* Add some margin around the image */
-            max-height: 50px;          /* Set a max height for the image */
+            margin: 0 20px;            
+            max-height: 50px;          
         }
 
         nav {
-            margin-right: 80px;        /* Move the navigation to the left by 80px */
+            margin-right: 80px;        
         }
 
         nav ul {
-            list-style-type: none;      /* Remove bullet points */
-            padding: 0;                 /* Remove default padding */
-            margin: 0;                  /* Remove default margin */
+            list-style-type: none;      
+            padding: 0;                 
+            margin: 0;                  
         }
 
         nav ul li {
-            display: inline;            /* Display list items inline */
-            margin-right: 20px;        /* Add some space between items */
+            display: inline;            
+            margin-right: 20px;        
         }
 
         nav ul li a {
-            text-decoration: none;      /* Remove underline from links */
-            color: white;               /* Set link color to white */
-            background-color: transparent; /* Set initial background to transparent */
-            padding: 10px 15px;        /* Add padding to create button effect */
-            border: 2px solid white;    /* Add a white border */
-            border-radius: 25px;       /* Make the buttons rounded */
-            transition: background-color 0.3s; /* Smooth transition for background color */
+            text-decoration: none;      
+            color: white;               
+            background-color: transparent; 
+            padding: 10px 15px;        
+            border: 2px solid white;    
+            border-radius: 25px;       
+            transition: background-color 0.3s; 
         }
 
         nav ul li a:hover {
-            background-color: rgb(136, 1, 1);      /* Change background color to red on hover */
+            background-color: rgb(136, 1, 1);      
+        }
+
+        .ticker {
+            background-color: #700000; 
+            color: white;           
+            padding: 10px;         
+            font-size: 18px;       
+            overflow: hidden;      
+            white-space: nowrap;   
+            width: 100%; /* Ensure the ticker spans the full width */
+        }
+
+        .ticker span {
+            display: inline-block;  
+            animation: ticker 10s linear infinite; 
+        }
+
+        @keyframes ticker {
+            0% { transform: translateX(500%); } /* Start off-screen to the right */
+            100% { transform: translateX(-100%); } /* End off-screen to the left */
+        }
+
+        body {
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+        }
+
+        .content-section {
+            padding: 20px 40px; /* Adjusted padding for top/bottom and left/right */
+            background-color: black; /* Set background to black */
+            color: white; /* Change text color to white for contrast */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        .content-section p {
+            max-width: 1000px; /* Set a maximum width for the paragraph */
+            margin: 0 auto; /* Center the paragraph */
+            line-height: 1.6; /* Optional: Adjust line height for better readability */
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column; 
+                align-items: flex-start; 
+            }
+
+            h1 {
+                margin-left: 0; 
+            }
+
+            nav {
+                margin-right: 0; 
+            }
+
+            nav ul li {
+                display: block; 
+                margin-right: 0; 
+                margin-bottom: 10px; 
+            }
         }
     </style>
 </head>
@@ -71,5 +128,58 @@
             </ul>
         </nav>
     </header>
+    
+    <div class="ticker">
+        <span id="ticker-content"></span>
+    </div>
+    <div class="content-section">
+        <p>Being mindful is about awareness. As hitters, we need to be conscious of our body throughout the swing, a task that is much easier said than done. I believe that the most crucial aspects of hitting are the load and timing, as the load constitutes the initial movement of our swing and timing dictates whether our body has a chance to do what it is trained to do or not. If these two pieces aren’t consistent, mechanics tend to break down.<br><br>
+
+            In group seminars and hitting sessions, the goal is to provide athletes with a concrete understanding of timing and what a strong load feels like for each individual hitter. Once hitters comprehend the significance of timing and how it establishes the foundation of the swing, athletes can better grasp why their swing succeeds or breaks down. Often, hitters are simply informed that they are late, or face other surface level issues in their swings without a true understanding or feel for the reasons behind these problems. Once they grasp how to properly evaluate their timing, athletes can more easily adjust their own swings, developing a better feel for their bodies.<br><br>
+            
+            I frequently pose questions to hitters to help them understand the feel of their swing. If hitters are consistently given instructions without understanding, they will never fully take ownership of their swing, fostering dependency on others. The goal is to help athletes develop their own thoughts and feelings about their swings, enabling quicker adjustments during games. ​Most all hitters are late to some extent, which is why the game of baseball is so hard. Yet the idea of timing is sort of thrown around as if no one really has a distinct answer of how to be on time consistently. In the big leagues, successful hitters know how to synchronize with the pitcher, seeking specific points to match up. This is the focus of our discussions and hitting sessions.<br><br>
+            
+            These concepts are applicable to any mechanics that hitters are currently working on, as the intention is not to change a player’s swing but to assist them in achieving consistent timing and to increase swing efficiency. With improved timing comes heightened awareness, leading to greater success.</p>
+    </div>        
+
+    <script>
+        const currentCurrency = "USD"; // Define the currency you want to fetch
+
+        async function fetchBitcoinPrice() {
+            // Construct the API URL with the current currency
+            const apiURL = `https://api.coinbase.com/v2/prices/BTC-${currentCurrency}/spot`;
+
+            try {
+                // Fetch data from the API
+                let response = await fetch(apiURL);
+                // Parse the JSON response
+                let json = await response.json();
+                // Extract the Bitcoin price from the response
+                const bitcoinPrice = json.data.amount;
+
+                // Return the formatted price
+                return `${currentCurrency} ${bitcoinPrice}`;
+            } catch (error) {
+                // Log any errors that occur during the fetch operation
+                console.error("Error fetching Bitcoin Price", error);
+                return "Error fetching price"; // Return an error message
+            }
+        }
+
+        async function updateTicker() {
+            // Fetch the Bitcoin price
+            const bitcoinPrice = await fetchBitcoinPrice();
+
+            // Update the ticker content
+            const tickerContent = document.getElementById('ticker-content');
+            tickerContent.innerHTML = `Bitcoin: ${bitcoinPrice} | Stay Humble, Stack Sats`; 
+        }
+
+        // Call the function to update the ticker when the page loads
+        updateTicker();
+
+        // Optionally, you can set an interval to update the prices periodically
+        // setInterval(updateTicker, 60000); // Update every minute
+    </script>
 </body>
 </html>
