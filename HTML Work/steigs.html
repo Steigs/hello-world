@@ -92,6 +92,76 @@
             line-height: 1.6; /* Optional: Adjust line height for better readability */
         }
 
+        .services {
+            display: flex; /* Use flexbox for alignment */
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
+            text-align: center;
+            background: black;
+            color: white;
+            padding: 20px;
+        }
+
+        .services h1 {
+            margin: 0; /* Remove default margin */
+        }
+
+        .card-wrapper {
+            display: flex; /* Enable flexbox */
+            justify-content: center; /* Center the cards horizontally */
+            gap: 20px; /* Optional: Add space between cards */
+            background: black;
+            color: white;
+        
+        }
+
+        .card-container {
+            width: 350px; /* Set the desired width of the card container */
+            height: auto; /* Allow height to adjust based on content */
+            border: 1px solid #ccc; /* Optional: Add a border for visibility */
+            border-radius: 8px; /* Optional: Add rounded corners */
+            overflow: hidden; /* Hide overflow if content exceeds the container */
+            padding: 10px; /* Add some padding inside the container */
+            margin: 10px; /* Add margin around the container */
+            background-color: black;
+            color: white;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+        }
+
+        .card img {
+            width: 100%; /* Make the image responsive to the container's width */
+            height: 200px; /* Set a fixed height for all images */
+            object-fit: cover; /* Ensure the image covers the area without distortion */
+            border-radius: 4px; /* Optional: Add rounded corners to the image */
+        }
+
+        .card h2 {
+            font-size: 1.5em; /* Adjust the font size of the title */
+            margin: 10px 0; /* Add margin above and below the title */
+        }
+
+        .card p {
+            font-size: 1em; /* Adjust the font size of the paragraph */
+            margin: 5px 0; /* Add margin above and below the paragraph */
+            padding: 10px;
+        }
+
+
+        section {
+            background-color: rgb(77, 72, 72);
+            width: 100%; /* Full width for the background */
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .content-wrapper {
+            max-width: 1000px; /* Set a maximum width for the text content */
+            margin: 0 auto; /* Center the content wrapper horizontally */
+            text-align: left; /* Keep text aligned to the left */
+        }
+
+
         @media (max-width: 768px) {
             header {
                 flex-direction: column; 
@@ -140,8 +210,48 @@
             I frequently pose questions to hitters to help them understand the feel of their swing. If hitters are consistently given instructions without understanding, they will never fully take ownership of their swing, fostering dependency on others. The goal is to help athletes develop their own thoughts and feelings about their swings, enabling quicker adjustments during games. ​Most all hitters are late to some extent, which is why the game of baseball is so hard. Yet the idea of timing is sort of thrown around as if no one really has a distinct answer of how to be on time consistently. In the big leagues, successful hitters know how to synchronize with the pitcher, seeking specific points to match up. This is the focus of our discussions and hitting sessions.<br><br>
             
             These concepts are applicable to any mechanics that hitters are currently working on, as the intention is not to change a player’s swing but to assist them in achieving consistent timing and to increase swing efficiency. With improved timing comes heightened awareness, leading to greater success.</p>
-    </div>        
-
+    </div>   
+    <div class = "services">
+    <h1>Services</h1>     
+        <div class="card-wrapper"> <!-- Flexbox wrapper -->
+        
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://www.slugger.com/sites/slugger.com/files/21-0350_HTCAB_UDP_LS_FNL_Wood_Sizing_TechTabs_Length.jpg?" alt="Description of image 1">
+                    <h2>Group Seminar</h2>
+                    <p>Hitting seminar focused on timing and load.</p>
+                    <p>Understanding how to get on time consistently with our load is key to creating a more efficient swing and gives us the ability to make quicker adjustments. If you are interested in a seminar please reach out for details and scheduling.</p> 
+                    <p>Serving King and Pierce County</p> 
+                    <p>mindfulhitting@proton.me</p>
+                </div>
+            </div>
+            <div class="card-container">        
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/ZT8iOalgCBQ/maxresdefault.jpg" alt="Description of image 1">
+                    <h2>Seminar and Hitting</h2>
+                    <p>This option is for a group that wants to take swings after the seminar on timing and load, to get a better feel for the information. Additional hitting sessions are always an option. For questions and details please send an email.</p> 
+                    <p>Serving King and Pierce County</p> 
+                    <p>mindfulhitting@proton.me</p>
+                </div>
+            </div>
+            <div class="card-container">        
+                <div class="card">
+                    <img src="https://www.eventmarketer.com/wp-content/uploads/2020/07/stock_phone_baseball.jpg" alt="Description of image 1">
+                    <h2>Text Services</h2>
+                    <p>Have a hitting question? Need a drill, or just want to chat about your swing? Try a text service for 10 cents ($.10) per message. You will receive a response within 24 hours.</p> 
+                    <p>(360) 226-6675</p> 
+                </div>
+            </div>
+            <div class="card-container">        
+                <div class="card">
+                    <img src="https://image.blocktempo.com/2023/06/64060bfe29753b9112516fa4_what-is-Nostr_-Desktop.jpg" alt="Description of image 1">
+                    <h2>Community</h2>
+                    <p>Nostr is a new form of social media where we will be hosting a Hitting Mastermind community. This will be an open forum to discuss hitting, ask questions and try new ideas at no cost.</p> 
+                    <p>To try it out, download Damus from the Apple store or Amethyst from Google Play, create an account and search for "HittingMastermind" in the community section. </p> 
+                </div>   
+            </div>
+        </div>
+    </div>      
     <script>
         const currentCurrency = "USD"; // Define the currency you want to fetch
 
