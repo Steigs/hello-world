@@ -6,6 +6,12 @@
     <title>Books</title>
     <!-- <link rel="stylesheet" href="styles.css"> Link to your CSS file if you have one -->
     <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+
         header {
             display: flex;               
             justify-content: space-between; 
@@ -72,6 +78,24 @@
             0% { transform: translateX(500%); } /* Start off-screen to the right */
             100% { transform: translateX(-100%); } /* End off-screen to the left */
         }
+
+        .content-section{
+            text-align: center;
+            background: black;
+            color: white;
+            padding: 25px;
+        }
+
+        .content-wrapper{
+            text-align: left;
+            background: black;
+            color: white;
+            margin: auto;
+            padding: 425px;
+            padding-top: 10px;
+           
+        }
+
         @media (max-width: 768px) {
             header {
                 flex-direction: column; 
@@ -99,7 +123,7 @@
 </head>
 <body>
     <header>
-        <a href="steigs.html"><h1>Brady Steiger</h1></a>
+       <h1>Brady Steiger</h1>
         <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fromsfun.com%2Fwp-content%2Fuploads%2F2023%2F03%2FMLB-SlugFest-Loaded.jpg&f=1&nofb=1&ipt=e660121f25f21f80965f07fee5064b8872da423d772d82e892e104bd7ae21043" alt="Description of Image" class="header-image">
 
         <nav>
@@ -116,7 +140,7 @@
         <span id="ticker-content"></span>
     </div>
     <div class="content-section">
-        <h1>Book Recommendations</h1></br></div>
+        <h1>Book Recommendations</h1></div>
             <div class = "content-wrapper">
             <p><h3><i>The Way of Baseball: Finding Stillness at 95mph</i> - by Shawn Green</h3>
 
@@ -164,5 +188,47 @@
             to embrace the challenge, you'll gain a deeper understanding of relentless dedication and what it takes to reach the highest levels of achievement.</br></p>
             </div>
     </div>
+
+    <script>
+        const currentCurrency = "USD"; // Define the currency you want to fetch
+
+        async function fetchBitcoinPrice() {
+            // Construct the API URL with the current currency
+            const apiURL = `https://api.coinbase.com/v2/prices/BTC-${currentCurrency}/spot`;
+
+            try {
+                // Fetch data from the API
+                let response = await fetch(apiURL);
+                // Parse the JSON response
+                let json = await response.json();
+                // Extract the Bitcoin price from the response
+                const bitcoinPrice = json.data.amount;
+
+                // Return the formatted price
+                return `${currentCurrency} ${bitcoinPrice}`;
+            } catch (error) {
+                // Log any errors that occur during the fetch operation
+                console.error("Error fetching Bitcoin Price", error);
+                return "Error fetching price"; // Return an error message
+            }
+        }
+
+        async function updateTicker() {
+            // Fetch the Bitcoin price
+            const bitcoinPrice = await fetchBitcoinPrice();
+
+            // Update the ticker content
+            const tickerContent = document.getElementById('ticker-content');
+            tickerContent.innerHTML = `Bitcoin: ${bitcoinPrice} | Stay Humble, Stack Sats`; 
+        }
+
+        // Call the function to update the ticker when the page loads
+        updateTicker();
+
+        // Optionally, you can set an interval to update the prices periodically
+        // setInterval(updateTicker, 60000); // Update every minute
+    </script>
+
+
 </body>
 </html>
